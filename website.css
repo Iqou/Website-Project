@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top:1px;
+    background-color: gray;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+.header{
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(denji-manga.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:0;
+    height: auto;
+    transform: translateZ(100);
+    top: -90px; /* .navbar has margin-bottom: 20px; */
+    box-shadow: 0px 20px 50px;
+}
+
+
+nav{
+    max-height: 3vh;
+    background-color: rgb(215, 129, 8);
+    display:flex;
+    padding:2% 10px;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+    top:0;
+    overflow: visible;
+    z-index: 200;
+    background-color: rgba(128, 128, 128, 0.592); /* Initial translucent background */
+    z-index: 1000;
+    transition: background-color 0.5s ease-out; /* Add smooth transition effect */
+}
+
+body.scrolled nav {
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  }
+
+nav img{
+    max-width: 5vw;
+    max-height:15vh;
+    object-fit: cover;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+    text-shadow: 1px 1px 10px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: sticky;
+}
+.nav-links ul li a{
+    color: orange;
+    text-shadow: 1px 1px 5px orange;
+    text-decoration: none;
+    font-size:13px;
+    overflow: hidden;
+}
+.nav-links ul li::after{
+    content:'';
+    background-color: orange;
+    width: 0%;
+    height:4px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    opacity: 0%;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    opacity: 100%;
+    background-color: orange;
+}
+.nav-text{
+    flex:1;
+    text-align: left;
+    text-shadow: 1px 1px 10px;
+    color:orange;
+    padding:10px;
+    font-size: larger;
+}
+
+
+
+/* course */
+  .course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+p{
+    color:#524956;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background:#777;
+    border-radius:12px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.7s;
+}
+h3{
+    text-align: center;
+    font-weight:600;
+    margin:10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 900px) {
+    .group{margin-left: auto; margin-right: auto;}
+}
+
+.group{      
+    margin:90px;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+}
+.item{
+    padding:20px;
+    margin:20px; 
+    z-index:999;
+    opacity: 85%;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+.item:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+    
+}
+.images{
+    width: 25vw;
+    border-radius: 30px;
+    border-style: dashed;
+    border-width: 5px;
+}
+html { scroll-behavior: smooth; }
+
+html
+{
+    background-image: url('path/to/imagefile.jpg'); 
+    background-position:center center;
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  
+
+
+  
+ 
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+

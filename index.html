@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denji</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="icon" href="denji-icon.png">
+
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav>
+        <a href="index.html"><img src="denji-icon.png"></a>
+        <div class="nav-text">
+            <a>CHAINSAW MAN</a>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><b><a href="">HOME</a></b></li>
+                <li><b><a href="">ORDER</a></b></li>
+                <li><b><a href="">ABOUT</a></b></li>
+                <li><b><a href="">CONTACTS</a></b></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<!-- Header -->
+    <section class="header">>
+        <div class="group"> 
+            <div class="item">
+                <img src="denji-figurine.jpg" class="images" class="images" >
+            </div>
+            <div class="item">
+                <img src="denji-figurine-front.jpg" class="images" class="images" >
+            </div>
+            <div class="item">
+                <img src="denji-figurine2.jpg" class="images" style="zoom: 10px;">
+            </div>
+            </div>
+        </div>
+        <br>
+        </section>
+
+<!-- Course -->
+<section class="course">
+    <h1>Halo kamu</h1>
+    <p>Iya kamu di sana</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Halo aku tidak tau kenapa ada di sini
+            </p> 
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Halo aku tidak tau kenapa ada di sini
+            </p>
+        </div> 
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Halo aku tidak tau kenapa ada di sini
+            </p> 
+        </div>
+    </div>
+</section>
+
+
+<!-- JavaScripts -->
+<script>
+    // JavaScript to add a class when scrolling down
+    window.addEventListener("scroll", function() {
+      const scrolled = window.scrollY > 0; // Adjust this value based on when you want the effect to trigger
+      document.body.classList.toggle("scrolled", scrolled);
+    });
+  </script>
+</body>
+</html>
