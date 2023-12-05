@@ -1,13 +1,16 @@
+
 body {
-    margin: 0;
+    margin: auto;
     font-family: Arial, sans-serif;
     padding-top:1px;
-    background-color: gray;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(grain-background.png);
+    background-position: center;
+    background-size: cover;
   }
+  
 .header{
     width:100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(denji-manga.jpg);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(denji-manga.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -27,9 +30,9 @@ nav{
     justify-content: space-between;
     align-items:center;
     position: sticky;
-    top:0;
+    top: 0px;
     overflow: visible;
-    z-index: 200;
+    z-index: 0;
     background-color: rgba(128, 128, 128, 0.592); /* Initial translucent background */
     z-index: 1000;
     transition: background-color 0.5s ease-out; /* Add smooth transition effect */
@@ -87,10 +90,22 @@ nav img{
     font-size: larger;
 }
 
+/* Biography */
+.bio{
+    width:80%;
+    margin:left;
+    text-align:center;
+    justify-content: left;
+}
+.title{
+    margin:90px;
+    padding:10px;
+}
+
 
 
 /* course */
-  .course{
+/*   .course{
     width:80%;
     margin:auto;
     text-align:center;
@@ -128,13 +143,11 @@ h3{
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
+} */
 
 
-@media (max-width: 900px) {
-    .group{margin-left: auto; margin-right: auto;}
-}
 
+/* Group */
 .group{      
     margin:90px;
     padding:10px;
@@ -159,9 +172,10 @@ h3{
 .images{
     width: 25vw;
     border-radius: 30px;
-    border-style: dashed;
-    border-width: 5px;
+
 }
+
+/* HTML */
 html { scroll-behavior: smooth; }
 
 html
@@ -179,6 +193,8 @@ html
 html {
     scroll-behavior: smooth;
   }
+
+
 
 
 
