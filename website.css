@@ -1,13 +1,12 @@
-
 body {
-    margin: auto;
+    margin:0;
     font-family: Arial, sans-serif;
-    padding-top:1px;
+ 
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(grain-background.png);
     background-position: center;
     background-size: cover;
+    background-repeat: repeat;
   }
-  
 .header{
     width:100%;
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(denji-manga.jpg);
@@ -16,7 +15,7 @@ body {
     position: relative;
     top:0;
     height: auto;
-    transform: translateZ(100);
+    transform: translateZ(0);
     top: -90px; /* .navbar has margin-bottom: 20px; */
     box-shadow: 0px 20px 50px;
 }
@@ -30,9 +29,9 @@ nav{
     justify-content: space-between;
     align-items:center;
     position: sticky;
-    top: 0px;
+    top:0;
     overflow: visible;
-    z-index: 0;
+    z-index: 200;
     background-color: rgba(128, 128, 128, 0.592); /* Initial translucent background */
     z-index: 1000;
     transition: background-color 0.5s ease-out; /* Add smooth transition effect */
@@ -94,12 +93,12 @@ nav img{
 .bio{
     width:80%;
     margin:left;
-    text-align:center;
     justify-content: left;
 }
 .title{
-    margin:90px;
-    padding:10px;
+    font-size:larger;
+    justify-content: left;
+    text-align: center;
 }
 
 
@@ -147,35 +146,34 @@ h3{
 
 
 
+
 /* Group */
 .group{      
     margin:90px;
-    padding:10px;
+    padding:50px;
     display:flex;
     justify-content: center;
 }
 .item{
     padding:20px;
-    margin:20px; 
-    z-index:999;
-    opacity: 85%;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
+    margin:20px;
+    margin-top:50px;
 }
-.item:hover {
-    transform: scale(1.2);
-    opacity: 100%;
     
-}
 .images{
     width: 25vw;
     border-radius: 30px;
-
+    z-index:999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    opacity: 85%;
 }
-
-/* HTML */
+.images:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+}
 html { scroll-behavior: smooth; }
 
 html
@@ -194,7 +192,47 @@ html {
     scroll-behavior: smooth;
   }
 
+/* Left side title and picture */
+  #containerleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+}
 
+#left-side {
+    margin-right: 20px;
+    padding-left: 50px;
+
+}
+
+#left-side img {
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+/* Right side */
+
+#containerright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh;
+    text-align: center;
+}
+#right-side {
+    margin-left: 20px;
+    padding-right: 100px;
+    border-width: 30;
+    border-color:whitesmoke;
+    
+}
+
+#right-side img {
+    max-width: 100%;
+    max-height: 50vh;
+}
 
 
 
