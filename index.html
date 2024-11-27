@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=DotGothic16&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="unselectable">
 <!-- Navigation Bar -->
 <nav>
     <a href="index.html"><img src="denji-icon.png"></a>
@@ -23,7 +23,7 @@
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
             <li><b><a href="">HOME</a></b></li>
-            <li><b><a href="">ORDER</a></b></li>
+            <li><b><a href="">FIGURINE</a></b></li>
             <li><b><a href="">ABOUT</a></b></li>
             <li><b><a href="">CONTACTS</a></b></li>
         </ul>
@@ -34,10 +34,10 @@
     <section class="header">
         <div class="group"> 
             <div class="item">
-                <img src="denji-figurine.jpg" class="images" class="images" >
+                <img src="denji-figurine.jpg" class="images" >
             </div>
             <div class="item">
-                <img src="denji-figurine-front.jpg" class="images" class="images" >
+                <img src="denji-figurine-front.jpg" class="images" >
             </div>
             <div class="item">
                 <img src="denji-figurine2.jpg" class="images" style="zoom: 10px;">
@@ -48,26 +48,32 @@
         </section>
 
 <!-- Bio -->
-<div id="containerleft">
+    
+    <div id="title2">
+        <h1>ABOUT CHAINSAW MAN</h1>
+    </div>
 
+<div id="containerleft">
     <div id="left-side">
         <h2>Denji</h2>
         <img src="denji-picture.png" alt="Image 1">
     </div>
     <div id="text-containerleft">
-        <p>Denji, initially leading a bleak and mundane life, experiences a dramatic turn of events
-            after his debt-ridden father passes away. To settle his father's debts, Denji takes
-            on dangerous and odd jobs while accompanied by his loyal devil pet, Pochita. However,
-            tragedy strikes when Denji loses his life in a demon attack, only to be revived by
-            Pochita merging with him and transforming him into Chainsaw Man.</p>
+        <p>Denji (デンジ?) is the titular protagonist of the Chainsaw Man manga and anime series. He is the main protagonist of the Public Safety Saga and the co-protagonist of the Academy Saga.
+            <br><br>As a young boy, he inherits his father's debts from the Yakuza. After meeting Pochita, he becomes a Devil Hunter for the Yakuza in an attempt to clear his debt. Once the Yakuza, under 
+            the control of a Devil, betrays him, he dies and Pochita becomes his heart. He is then revived and can become the Chainsaw Man (チェンソーマン Chensō Man?) by pulling a cord on his 
+            chest. After meeting Makima, he became a Public Safety Devil Hunter as a member of Tokyo Special Division 4.</p>
     </div>
 </div>
 <div id="containerright">
     <div id="text-containerright">
-        <p>Chainsaw Man possesses incredible strength and abilities, with chainsaw blades protruding 
-            from various parts of his body. As Denji becomes an official devil hunter,
-            he navigates the complex and perilous world of devil hunting,
-            facing powerful adversaries and uncovering dark secrets.</p>
+        <p>Chainsaw Man refers to the transformed version of Denji after he merges with his pet devil, Pochita. This transformation 
+            grants him the ability to sprout chainsaw blades from his body, which he uses as weapons to fight devils. In his Chainsaw 
+            Man form, Denji becomes an unpredictable and powerful force in the battle against devils, combining raw strength and a 
+            brutal, chainsaw-powered fighting style. His appearance is marked by a chainsaw emerging from his head and his arms, 
+            making him a fearsome figure in the world of devil hunters. Despite his violent powers, Chainsaw Man's actions and 
+            motivations are driven by Denji's deep desires, such as his quest for a better life, love, and recognition, all while 
+            navigating a dangerous and often morally ambiguous world.</p>
     </div>
     <div id="right-side">
         <h2>Chainsaw Man</h2>
@@ -78,13 +84,9 @@
 
 
 <!-- JavaScripts -->
-<script>
-    // JavaScript to add a class when scrolling down
-    window.addEventListener("scroll", function() {
-      const scrolled = window.scrollY > 0; // Adjust this value based on when you want the effect to trigger
-      document.body.classList.toggle("scrolled", scrolled);
-    });
-  </script>
+<script src="script.js">
+
+</script>
 </body>
 </html>
 

@@ -12,16 +12,13 @@ body {
     background-repeat: repeat;
   }
 .header{
+    position:relative;
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(denji-manga.jpg);
     background-position: center;
     background-size: cover;
     width:100%;
-
-    position: relative;
-    top:0;
-    height: auto;
-    transform: translateZ(0);
-    top: -50px; /* .navbar has margin-bottom: 20px; */
+    height: 700px;
+    bottom: 80px; /* .navbar has margin-bottom: 20px; */
 }
 
 nav{
@@ -155,7 +152,7 @@ h3{
 .item{
     padding:20px;
     margin:20px;
-    margin-top:50px;
+    margin-top:100px;
 }
     
 .images{
@@ -187,15 +184,26 @@ html
 
 /* Smooth Scroll */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;;
   }
+
+/* Title */
+#title2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
 
 /* Left side title and picture */
   #containerleft {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 50vh;
+    height: 55vh;
     text-align: center;
 }
 
@@ -242,6 +250,8 @@ html {
     background-color:orange;
     padding: 10px;
     max-width: 500px;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 #text-containerleft {
     text-align: justify;
@@ -250,12 +260,16 @@ html {
     background-color: orange;
     padding: 10px;
     max-width: 500px;
+    z-index: 1000;
+    border-radius: 10px;
+    border-width: 50px, black, transparent;
+    margin-top:30px;
 }
 
 @keyframes appear {
     from {
       opacity: 0;
-      clip-path: inset(0% -100% 100% 0);
+      clip-path: inset(0% -100% 0% 0);
     }
     to {
       opacity: 1;
@@ -278,7 +292,7 @@ html {
 #containerleft {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0%;
+    animation-range: entry 0% cover 30%;
 }
 
 #containerright {
@@ -293,6 +307,15 @@ html {
     animation-range: exit 0% cover 150% ;
 }
 
+/* Unselectable text */
+
+.unselectable {
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* image zoom on click*/
 
 
 
