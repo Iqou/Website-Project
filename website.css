@@ -8,42 +8,35 @@ body {
  
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(grain-background.png);
     background-position: center;
-    background-size: cover;
+    background-size: stretch;
     background-repeat: repeat;
   }
 .header{
-    width:100%;
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(73, 73, 73, 0.7)),url(denji-manga.jpg);
     background-position: center;
     background-size: cover;
+    width:100%;
+
     position: relative;
     top:0;
     height: auto;
     transform: translateZ(0);
-    top: -90px; /* .navbar has margin-bottom: 20px; */
-    box-shadow: 0px 20px 50px;
+    top: -50px; /* .navbar has margin-bottom: 20px; */
 }
-
 
 nav{
     max-height: 3vh;
-    background-color: rgb(215, 129, 8);
     display:flex;
     padding:2% 10px;
     justify-content: space-between;
     align-items:center;
-    position: sticky;
+    position: sticky !important;
     top:0;
     overflow: visible;
-    z-index: 200;
-    background-color: rgba(128, 128, 128, 0.592); /* Initial translucent background */
     z-index: 1000;
-    transition: background-color 0.5s ease-out; /* Add smooth transition effect */
+
 }
 
-body.scrolled nav {
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
-  }
 
 nav img{
     max-width: 5vw;
@@ -153,8 +146,9 @@ h3{
 
 /* Group */
 .group{      
-    margin:90px;
-    padding:50px;
+    margin:0px;
+    padding:0px;
+    width :100%;
     display:flex;
     justify-content: center;
 }
@@ -201,7 +195,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
+    height: 50vh;
     text-align: center;
 }
 
@@ -224,8 +218,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 50vh;
-    text-align: center;
+    height: 80vh;
+    text-align: justify;
 }
 #right-side {
     margin-left: 20px;
@@ -242,14 +236,61 @@ html {
 }
 /* Text align */
 #text-containerright {
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     margin-right: 20px;
-    background-color:orange
+    background-color:orange;
+    padding: 10px;
+    max-width: 500px;
 }
 #text-containerleft {
-    text-align: end;
+    text-align: justify;
+    text-justify: inter-word;
     margin-right: 20px;
     background-color: orange;
+    padding: 10px;
+    max-width: 500px;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(0% -100% 100% 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes dissapear {
+    from {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+    to {
+      opacity: 0;
+      clip-path: inset(0% -100% 100% 0);
+    }
+  }
+
+  /* Animation */
+#containerleft {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+#containerright {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% ;
+}
+
+.header {
+    animation: dissapear ease-in;
+    animation-timeline: view();
+    animation-range: exit 0% cover 150% ;
 }
 
 
