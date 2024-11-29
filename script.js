@@ -6,8 +6,3 @@ window.addEventListener("scroll", function() {
     document.body.classList.toggle("scrolled", scrolled);
   });
 
-
-// Javascript to zoom image when clicking on image element
-  document.getElementById('zoomImage').addEventListener('click', function() {
-    this.classList.toggle('zoomed');
-});
