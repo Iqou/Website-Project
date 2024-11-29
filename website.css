@@ -25,10 +25,11 @@ nav{
     max-height: 3vh;
     display:flex;
     padding:2% 10px;
-    justify-content:right;
-    align-items:right;
+    justify-content: space-between;
+    align-items:center;
     position: sticky !important;
     top:0;
+    overflow: visible;
     z-index: 1000;
 
 }
