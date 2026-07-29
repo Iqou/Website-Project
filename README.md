@@ -5,5 +5,5 @@ SEA (Software Engineering & Application) held a study group that consists of 5 d
 ⚠️<b><i>Disclaimer<i></b>: The website is very unfinished. I barely know how to create a good design lol
 </pre>
 The website i created ->
-<br> https://denjiwebsite.netlify.app/
+<br> https://iqou.github.io/Website-Project/
 
